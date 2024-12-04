@@ -28,6 +28,7 @@ export async function run() {
       const resourceGroupName = core.getInput('resource-group', {
          required: true
       })
+      
       const clusterName = core.getInput('cluster-name', {required: true})
       const resourceType = core.getInput('resource-type') || 'Microsoft.ContainerService/managedClusters'
       const subscription = core.getInput('subscription') || ''
